@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Work</title>
+    <link rel="stylesheet" href="photography.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><i class="fas fa-camera"></i></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/photography2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+        <div class="hero-content">
+            <h1>My Photography Work</h1>
+            <!-- <p>What you have caught on film is captured forever.</p> -->
+            <a href="#portfolio" class="btn-get-started">Let's Go</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="portfolio-intro">
+                <h2>Click. Edit. Magic.</h2>
+                <p>Where ordinary scenes transform into extraordinary memories. Browse my gallery of visual adventures.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Portrait Photos -->
+                <div id="1" class="portfolio-item portrait-item">
+                    <img src="images\portrait.jpg" alt="Portrait Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Elegant Portrait</h3>
+                        <p>Portrait Photography</p>
+                        <a href="#lightbox-1" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+                
+                <div id="2" class="portfolio-item portrait-item">
+                    <img src="images/samyak.jpg" alt="Portrait Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Thoughtful Gaze</h3>
+                        <p>Portrait Photography</p>
+                        <a href="#lightbox-2" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+
+                <!-- Architectural photography -->
+                <div id="3" class="portfolio-item landscape-item">
+                    <img src="images\Landscape.jpg" alt="Architectural Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Beauty of Alandi</h3>
+                        <p>Architectural Photography</p>
+                        <a href="#lightbox-3" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+                
+                <div id="4" class="portfolio-item landscape-item">
+                    <img src="images\Arch2.jpg" alt="Architectural Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Peaceful Walkway</h3>
+                        <p>Architectural Photography</p>
+                        <a href="#lightbox-4" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+
+                <!-- Street Photos -->
+                <div id="5" class="portfolio-item street-item">
+                    <img src="images\street1.jpg" alt="Street Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Tranquil Journey</h3>
+                        <p>Street Photography</p>
+                        <a href="#lightbox-5" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+                
+                <div id="6" class="portfolio-item street-item">
+                    <img src="images\street2.jpg" alt="Street Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Dusky Platform</h3>
+                        <p>Street Photography</p>
+                        <a href="#lightbox-6" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+
+                <!-- Other Photos -->
+                <div id="7" class="portfolio-item night-item">
+                    <img src="images\ADT.jpg" alt="Night Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Glowing Masterpiece</h3>
+                        <p>Night Photography</p>
+                        <a href="#lightbox-7" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+                
+                <div id="8" class="portfolio-item silhouette-item">
+                    <img src="images\night.jpg" alt="Silhouette Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Lonely Reflection</h3>
+                        <p>Silhouette Photography</p>
+                        <a href="#lightbox-8" class="view-btn"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightboxes -->
+    <!-- Lightbox 1 -->
+    <div id="lightbox-1" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#1" class="close-lightbox">&times;</a>
+            <img src="images\portrait.jpg" alt="Elegant Portrait">
+            <div class="lightbox-caption">Elegant Portrait - Portrait Photography</div>
+        </div>
+    </div>
+
+    <!-- Lightbox 2 -->
+    <div id="lightbox-2" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#2" class="close-lightbox">&times;</a>
+            <img src="images/samyak.jpg" alt="Thoughtful Gaze">
+            <div class="lightbox-caption">Thoughtful Gaze - Portrait Photography</div>
+        </div>
+    </div>
+
+    <!-- Lightbox 3 -->
+    <div id="lightbox-3" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#3" class="close-lightbox">&times;</a>
+            <img src="images\Landscape.jpg" alt="Beauty of Alandi">
+            <div class="lightbox-caption">Beauty of Alandi - Architectural Photography</div>
+        </div>
+    </div>
+
+    <!-- Lightbox 4 -->
+    <div id="lightbox-4" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#4" class="close-lightbox">&times;</a>
+            <img src="images\Arch2.jpg" alt="Peaceful Walkway">
+            <div class="lightbox-caption">Peaceful Walkway - Architectural Photography</div>
+        </div>
+    </div>
+
+    <!-- Lightbox 5 -->
+    <div id="lightbox-5" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#5" class="close-lightbox">&times;</a>
+            <img src="images\street1.jpg" alt="Tranquil Journey">
+            <div class="lightbox-caption">Tranquil Journey - Street Photography</div>
+        </div>
+    </div>
+
+    <!-- Lightbox 6 -->
+    <div id="lightbox-6" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#6" class="close-lightbox">&times;</a>
+            <img src="images\street2.jpg" alt="Dusky Platform">
+            <div class="lightbox-caption">Dusky Platform - Street Photography</div>
+        </div>
+    </div>
+
+    <!-- Lightbox 7 -->
+    <div id="lightbox-7" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#7" class="close-lightbox">&times;</a>
+            <img src="images\ADT.jpg" alt="Glowing Masterpiece">
+            <div class="lightbox-caption">Glowing Masterpiece - Night Photography</div>
+        </div>
+    </div>
+
+    <!-- Lightbox 8 -->
+    <div id="lightbox-8" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#8" class="close-lightbox">&times;</a>
+            <img src="images\night.jpg" alt="Lonely Reflection">
+            <div class="lightbox-caption">Lonely Reflection - Silhouette Photography</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 My Photography Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

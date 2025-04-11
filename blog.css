@@ -1,0 +1,264 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #121212;
+}
+
+a {
+    text-decoration: none;
+    color: #ffd700;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Header styles */
+header {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #b0b0b0;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+nav ul li a.active {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Main content layout */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+}
+
+/* Blog posts section */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blog-post {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.post-date {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin: 1.5rem 1.5rem 0.5rem;
+}
+
+.blog-post h2 {
+    margin: 0 1.5rem 1rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.blog-post p {
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    color: #cccccc;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 0 1.5rem 1.5rem;
+    font-weight: 500;
+    color: #ffd700;
+    position: relative;
+}
+
+.read-more::after {
+    content: '→';
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.read-more:hover::after {
+    transform: translateX(5px);
+}
+
+/* Sidebar styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-me, .recent-posts {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h3, .recent-posts h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.about-me h3::after, .recent-posts h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #ffd700;
+    border-radius: 3px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    display: block;
+    border: 3px solid #2a2a2a;
+}
+
+.about-me p {
+    text-align: center;
+    color: #cccccc;
+}
+
+.recent-posts ul {
+    list-style: none;
+}
+
+.recent-posts ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.recent-posts ul li:last-child {
+    border-bottom: none;
+}
+
+.recent-posts ul li a {
+    color: #b0b0b0;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    display: block;
+}
+
+.recent-posts ul li a:hover {
+    color: #ffd700;
+    padding-left: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    color: #888888;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        order: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 0.75rem;
+    }
+    
+    .blog-post img {
+        height: 200px;
+    }
+}
